@@ -6,7 +6,7 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 app.set('trust proxy', true);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 // Load reasons from JSON
 const reasons = JSON.parse(fs.readFileSync('./reasons.json', 'utf-8'));
